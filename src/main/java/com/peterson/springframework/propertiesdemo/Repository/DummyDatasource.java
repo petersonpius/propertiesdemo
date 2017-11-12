@@ -1,9 +1,22 @@
 package com.peterson.springframework.propertiesdemo.Repository;
 
+import org.springframework.stereotype.Component;
+
+//@Component
 public class DummyDatasource {
     private String name;
     private String password;
     private String url;
+
+    public DummyDatasource() {
+
+    }
+
+    public DummyDatasource(String name, String password, String url) {
+        this.name = name;
+        this.password = password;
+        this.url = url;
+    }
 
     public String getName() {
         return name;
